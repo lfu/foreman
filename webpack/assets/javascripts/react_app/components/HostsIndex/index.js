@@ -303,6 +303,11 @@ const HostsIndex = () => {
               >
                 {__('Host group')}
               </MenuItem>
+              <Slot
+                id="_bulk-change-host-collections-modal"
+                fetchBulkParams={fetchBulkParams}
+                selectedCount={selectedCount}
+              />
               <MenuItem
                 itemId="change-owner-dropdown-item"
                 key="change-owner-dropdown-item"
